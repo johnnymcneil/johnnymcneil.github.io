@@ -15,4 +15,11 @@ div {
   top: 34%;
   background: #FFF;
   content: '';
+  padding: 16px;
+  box-sizing: padding-box;
+}
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 36pt;
+  color: #EEE
 }
