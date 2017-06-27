@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+}
 body {
 	background: #FFF;
 	padding: 64px 0;
@@ -28,6 +31,31 @@ footer h2 {
 	font-size: 8pt;
 	font-weight: 400;
 }
+
+.action {
+	height: 64px;
+	border-radius: 16px;
+	background: #01ff70; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #01ff70 0%, #2ecc40 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #01ff70 0%,#2ecc40 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #01ff70 0%,#2ecc40 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01ff70', endColorstr='#2ecc40',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: #FFF;
+	text-align: center;
+	line-height: 64px;
+	font-weight: 700;
+	border-bottom: 2px solid #7FDBFF;
+	box-sizing: border-box;;
+}
+
+.action:hover {
+	border-color: #39CCCC;
+}
+.action:active {
+	border-bottom: none;
+	border-top: 2px solid #39CCCC;
+}
+
 .color-shift {
 	animation:
 		begin 6s ease 3s normal 1 none running,
@@ -57,6 +85,12 @@ footer h2 {
 }
 @media all
 	and (max-width: 1200px){
+		.action {
+			width: 50%;
+			padding: 8px 16px;
+			font-size: 3vmax;
+			font-weight: 700;
+		}
 		.flex-container {
 			flex-direction: column;
 			justify-content: center;
@@ -65,7 +99,6 @@ footer h2 {
 		.flex-container > * { width: 80%; }
 		.flex-container section article * {
 			margin: 16px 0;
-			text-align: left;
 		}
 		.large-avatar { display: block; }
 		.inline-avatar { display: none; }
@@ -82,6 +115,12 @@ footer h2 {
 }
 @media all
 	and (min-width: 1200px){
+		.action {
+			width: 456px;
+			font-size: 21pt;
+			font-weight: 700;
+			display: inline-block;
+		}
 		.flex-container {
 			width: 960px;
 			margin: 0 auto;
@@ -95,7 +134,7 @@ footer h2 {
 			float: left;
 			width: 456px;
 			margin: 0 32px 32px 0;
-		}			
+		}
 		article { margin: 32px 0; }
 		h1 { font-size: 108px; }
 		article h1 {
@@ -108,3 +147,7 @@ footer h2 {
 			margin-top: 12pt;
 		}
 }
+@media all
+    and (max-width:776px){
+			.action {display: none;}
+		}
