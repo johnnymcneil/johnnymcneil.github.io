@@ -3,38 +3,108 @@
 	padding: 0;
 }
 body {
-	background: #EEE;
-}
-div {
+	background: #FFF;
+	padding: 64px 0;
 	font-family: 'Noto Sans', sans-serif;
 	color: #111;
 }
-.flex-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-@media all
-	and (max-width: 1200px){
-		.flex-container * { width: 80%;	}
-		h1 { font-size: 9vw; }
-}
-@media all
-	and (min-width: 1200px){
-		.flex-container * {	width: 960px; }
-		h1 { font-size: 108px; }
+div {
 }
 img {
 	float: left;
+	width: 100%;
 }
 h1 {
 	font-weight: 700;
 	margin-bottom: 32px;
 	text-align: center;
 }
-p {
-	font-size: 4vmin;
-	line-height: 6vmin;
-	margin-top: 3vmin;
+footer {
+	width: 100%;
+}
+footer h2 {
+	text-align: center;
+	color: #DDD;
+	font-size: 8pt;
+	font-weight: 400;
+}
+.color-shift {
+	animation:
+		begin 6s ease 3s normal 1 none running,
+		shift 60s ease 9s normal infinite none running
+}
+
+@keyframes
+	begin {
+		0% { color: #111; }
+		100% { color: #0074D9; }
+	}
+@keyframes
+	shift {
+		0%, 100% { color: #0074D9; }
+		10% { color: #85144B; }
+		20% { color: #FF4136; }
+		30% { color: #FF851B; }
+		40% { color: #FFDC00; }
+		50% { color: #01FF70; }
+		60% { color: #2ECC40; }
+		70% { color: #3D9970; }
+		80% { color: #39CCCC; }
+		90% { color: #7FDBFF; }
+	}
+.flex-container {
+	display: flex;
+}
+@media all
+	and (max-width: 1200px){
+		.flex-container {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.flex-container > * { width: 80%; }
+		.flex-container section article * {
+			margin: 16px 0;
+			text-align: left;
+		}
+		.large-avatar { display: block; }
+		.inline-avatar { display: none; }
+		h1 { font-size: 9vw; }
+		article h1 {
+			text-align: left;
+			font-size: 4.5vw;
+		}
+		p {
+			font-size: 3vmin;
+			line-height: 4.5vmin;
+			margin-top: 1.5vmin;
+		}
+}
+@media all
+	and (min-width: 1200px){
+		.flex-container {
+			width: 960px;
+			margin: 0 auto;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		.large-avatar { display: none; }
+		.inline-avatar {
+			display: inline;
+			float: left;
+			width: 456px;
+			margin: 0 32px 32px 0;
+		}			
+		article { margin: 32px 0; }
+		h1 { font-size: 108px; }
+		article h1 {
+			text-align: left;
+			font-size: 24pt;
+		}
+		p {
+			font-size: 18pt;
+			line-height: 24pt;
+			margin-top: 12pt;
+		}
 }
