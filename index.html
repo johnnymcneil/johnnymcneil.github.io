@@ -11,28 +11,13 @@
 </head>
 
 <body>
-	<div class="flex-container">
-		<header>
-			<h1>The Beginning of Something <span class="color-shift">New</span></h1>
-		</header>
-
-		<section>
-			<article>
-				<img class="large-avatar" src="img/sexyavatar.jpg">
-				<div>
-					<img class="inline-avatar" src="img/sexyavatar.jpg">
-
-					<h1>I operate a photography and video production company.</h1>
-
-					<a href="http://studiomcneil.com" class="action">Go to StudioMcNeil.com!<a>
-
-					<p>Although this page appears to be quite barren, with nothing more than simple copy on a white background, it must be imagined to be more. There is much more happening behind the curtains of this stage than is ready to be seen.</p>
-
-					<p>As such, I must (for now) leave you with nothing, save perhaps a slight curiosity or, more likely, an emotion that is equal parts boredom and upset.</p>
-				</div>
-			</article>
-		</section>
-		<footer><h2>&copy; 2016 Jonathan McNeil</h2></footer>
-	</div>
+	<div id="particles-js"></div>
+	<script src="res/particles.js"></script>
+	<script>
+		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+		particlesJS.load('particles-js', 'res/particles.json', function() {
+		  console.log('callback - particles.js config loaded');
+		});
+	</script>
 </body>
 </html>
