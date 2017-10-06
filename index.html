@@ -29,17 +29,15 @@
 		  background-repeat: no-repeat;
 		}
 	</style>
+	<script src="http://www.jsdelivr.com/#!particles.js"></script>
 </head>
 
 
 <body>
 	<div id="particles-js"></div>
-	<script src="res/particles.js"></script>
 	<script>
 		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-		particlesJS.load('particles-js', 'res/particles.json', function() {
-		  console.log('callback - particles.js config loaded');
-		});
+		particlesJS('particles-js', 'res/particles.json');
 	</script>
 </body>
 
