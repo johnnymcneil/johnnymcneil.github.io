@@ -24,16 +24,28 @@
 		#particles-js {
 			width: 100%;
 			height: 100%;
+			position: absolute;
+			z-index: 1;
 		  background-color: #3D3D3D;
 		  background-image: url('');
 		  background-size: cover;
 		  background-position: 50% 50%;
 		  background-repeat: no-repeat;
 		}
+		#container {
+			position: absolute;
+			width: 60%;
+			top: 25%;
+			left: 20%;
+			color: #FFF;
+			z-index: 2;
+		}
 		h1 {
+			font-size: 32pt;
 			font-family: 'Montserrat', sans-serif;
 		}
 		p {
+			font-size: 16pt;
 			font-family: 'Crimson Text', serif;
 		}
 	</style>
@@ -46,9 +58,9 @@
 		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 		particlesJS.load('particles-js', 'res/particles.json');
 	</script>
-
-	<h1>Hello World, I'm Johnny.</h1>
-	<p>I am an artist and programmer. This is where my things live.</p>
-
+	<div id="container">
+		<h1>Hello World, I'm Johnny.</h1>
+		<p>I am an artist and programmer. This is where my things live.</p>
+	</div>
 </body>
 </html>
