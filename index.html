@@ -6,20 +6,24 @@
 	<title>Johnny McNeil</title>
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:400,400i" rel="stylesheet">
 	<link href="res/stylesheet.css" type="text/css" rel="stylesheet" />
-	<script src="res/particles.js"></script>
+	<script type="text/javascript" src="res/instafeed.min.js"></script>
 </head>
 
 
 <body>
-	<div id="particles-js"></div>
-	<script>
-		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-		particlesJS.load('particles-js', 'res/particles.json');
-	</script>
-	<div id="container">
-		<h1>Hello World, I'm Johnny.</h1>
-		<p>I'm an artist, programmer, writer, and I own a small company called <a href="http://studiomcneil.com">Studio McNeil, LLC</a>. My work mostly is mostly digital in nature, although I try to stay open with mediums for expression. Photography and filmmaking are close to my heart, but I also find beauty in well-written code and brilliant websites.</p>
-		<p>Someday I'd like to share more of what I do on this page. I'll get there, but I'm not rushing anything. Thanks for reading. See ya soon.</p>
+	<div class="avatar" src="res/img/censoredeyes.jpg"></div>
+	<div class="body yellow">
+		<h1>Follow me on Instagram</h1>
+		<p>Temporary paragraph.</p>
+		<div id="instafeed"></div>
 	</div>
 </body>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+				userID: 'johnnymmcneil',
+        clientId: 'c7a33b3ba272494f86c5b6e3b3292c23'
+    });
+    feed.run();
+</script>
 </html>
