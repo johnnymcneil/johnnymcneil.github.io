@@ -7,15 +7,15 @@
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:400,400i" rel="stylesheet">
 	<link href="res/stylesheet.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
-
+  <script type="text/javascript" src"https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
 
 <body>
 	<div class="avatar" src="res/img/censoredeyes.jpg"></div>
-	<div class="body yellow">
+	<div class="body black">
 		<h1>Follow me on Instagram</h1>
-		<p>Temporary paragraph.</p>
+		<h2><a href="instagram.com/user/johnnymmcneil">@johnnymmcneil</a></h2>
 		<div id="instafeed"></div>
 		<script type="text/javascript">
 		    var feed = new Instafeed({
@@ -23,9 +23,9 @@
 						userId: '1495741419',
 		        clientId: 'c7a33b3ba272494f86c5b6e3b3292c23',
 						accessToken: '1495741419.c7a33b3.829a918cf6d54c8aa60670f09a50558a',
-						limit: '10',
 						sortBy: 'most-recent',
-						template: '<img src="{{image}}" />'
+						template: '<div class="insta"><a href="{{link}}"><img src="{{image}}" /></a><p class="cap">{{caption}}</p></div>',
+						resolution: 'standard_resolution'
 		    });
 		    feed.run();
 		</script>
