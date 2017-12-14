@@ -7,6 +7,15 @@
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:400,400i" rel="stylesheet">
 	<link href="res/stylesheet.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="res/instafeed.min.js"></script>
+
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+	        get: 'user',
+					userID: 'johnnymmcneil',
+	        clientId: 'c7a33b3ba272494f86c5b6e3b3292c23'
+	    });
+	    feed.run();
+	</script>
 </head>
 
 
@@ -18,12 +27,4 @@
 		<div id="instafeed"></div>
 	</div>
 </body>
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-				userID: 'johnnymmcneil',
-        clientId: 'c7a33b3ba272494f86c5b6e3b3292c23'
-    });
-    feed.run();
-</script>
 </html>
