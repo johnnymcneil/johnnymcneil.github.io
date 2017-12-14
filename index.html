@@ -6,7 +6,7 @@
 	<title>Johnny McNeil</title>
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:400,400i" rel="stylesheet">
 	<link href="res/stylesheet.css" type="text/css" rel="stylesheet" />
-	<script type="text/javascript" src="res/instafeed.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 
 </head>
 
@@ -21,7 +21,8 @@
 		    var feed = new Instafeed({
 		        get: 'user',
 						userID: '1495741419',
-		        clientId: 'c7a33b3ba272494f86c5b6e3b3292c23'
+		        clientId: 'c7a33b3ba272494f86c5b6e3b3292c23',
+						template: '<img src="{{image}}"></img>'
 		    });
 		    feed.run();
 		</script>
