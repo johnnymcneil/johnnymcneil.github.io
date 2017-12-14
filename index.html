@@ -8,14 +8,6 @@
 	<link href="res/stylesheet.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="res/instafeed.min.js"></script>
 
-	<script type="text/javascript">
-	    var feed = new Instafeed({
-	        get: 'user',
-					userID: '1495741419',
-	        clientId: 'c7a33b3ba272494f86c5b6e3b3292c23'
-	    });
-	    feed.run();
-	</script>
 </head>
 
 
@@ -25,6 +17,14 @@
 		<h1>Follow me on Instagram</h1>
 		<p>Temporary paragraph.</p>
 		<div id="instafeed"></div>
+		<script type="text/javascript">
+		    var feed = new Instafeed({
+		        get: 'user',
+						userID: '1495741419',
+		        clientId: 'c7a33b3ba272494f86c5b6e3b3292c23'
+		    });
+		    feed.run();
+		</script>
 	</div>
 </body>
 </html>
