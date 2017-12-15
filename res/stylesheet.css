@@ -1,3 +1,25 @@
+
+a, a:visited {
+	color: #0074D9;
+	text-decoration: none;
+}
+a:disabled {
+	color: #FF0000;
+}
+a:hover {
+	color: #7FDBFF;
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 32pt;
+	font-family: 'Montserrat', sans-serif;
+}
+h2 {
+	font-size: 16pt;
+	font-family: 'Montserrat', sans-serif;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -6,6 +28,7 @@ html, body {
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 }
+
 .avatar {
 	width: 100%;
 	height: 50%;
@@ -14,32 +37,20 @@ html, body {
 	background-position: center;
 	background-size: cover;
 }
+
+
+
 .body {
 	box-sizing: border-box;
 	min-height: 100%;
 	width: 100%;
 	padding: 5%;
 }
-.yellow {
-	background: #FFDC00;
-	color: #BBB;
-}
-.black {
-	background: #111111;
-	color: #FFF;
-}
-.near-black {
-	background: #222222;
-	color: #FFF;
-}
-
-
-#instafeed {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: left;
+.cap {
+	font-size: 16pt;
+	margin-top: -2px;
+	line-height: 1.5em;
+	font-family: 'Montserrat', sans-serif;
 }
 .insta {
 	box-sizing: border-box;
@@ -48,69 +59,76 @@ html, body {
 	align-self: flex-start;
 	padding: 16px;
 }
+
+.black {
+	background: #111111;
+	color: #FFF;
+}
+.blue {
+	background: #0074D9;
+	color: #FFF;
+}
+.near-black {
+	background: #222222;
+	color: #FFF;
+}
+.yellow {
+	background: #FFDC00;
+	color: #BBB;
+}
+
+#instafeed {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+}
 #instafeed a img {
 	width: 100%;
 	height: auto;
 }
 
+# Google Pixel (Portrait)
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+  h1 {
+		font-size: 48pt;
+	}
+	h2 {
+		font-size: 24pt;
+	}
 
-.cap {
-	font-size: 16pt;
-	margin-top: -2px;
-	line-height: 1.5em;
-	font-family: 'Montserrat', sans-serif;
-}
-a, a:visited {
-	color: #2ECC40;
-	text-decoration: none;
-}
-a:disabled {
-	color: #FF0000;
-}
-a:hover {
-	color: #2ECC40;
-	text-decoration: underline;
-}
-h1 {
-	font-size: 32pt;
-	font-family: 'Montserrat', sans-serif;
-}
-h2 {
-	font-size: 16pt;
-	font-family: 'Montserrat', sans-serif;
-}
-
-#load-more {
-	text-align: center;
-	font-weight: bold;
-	max-width: 33%;
-	padding: 16px;
-	height: 64px;
-	line-height: 64px;
-	vertical-align: middle;
-	border: 2px solid #2ECC40;
+	.insta {
+		max-width: 100%;
+	}
 }
 
 @media screen and (min-width: 600px) {
-.insta {
-	max-width: 50%;
-}
-h1 {
-	font-size: 48pt;
-}
-h2 {
-	font-size: 24pt;
-}
+	h1 {
+		font-size: 48pt;
+	}
+	h2 {
+		font-size: 24pt;
+	}
+
+	.insta {
+		max-width: 50%;
+	}
 }
 
 @media screen and (min-width: 1000px) {
-.insta {
-	max-width: calc(100% / 3);
-}
-h1 {
-	font-size: 64pt;
-}
-h2 {
-	font-size: 32pt;
-}
+	h1 {
+		font-size: 64pt;
+	}
+	h2 {
+		font-size: 32pt;
+	}
+
+	.insta {
+		max-width: calc(100% / 3);
+	}
 }
