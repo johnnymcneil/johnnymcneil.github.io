@@ -81,9 +81,10 @@ html, body {
 	width: 100%;
 	height: auto;
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: left;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-between;
 }
 #instafeed a img {
 	width: 100%;
