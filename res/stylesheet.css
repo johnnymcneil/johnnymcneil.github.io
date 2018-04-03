@@ -54,9 +54,9 @@ html, body {
 }
 .insta {
 	box-sizing: border-box;
-	max-width: 100%;
 	flex: 1 0 auto;
-	align-self: flex-start;
+	max-width: 100%;
+	padding: 16pt;
 }
 
 .black {
