@@ -1,4 +1,3 @@
-
 a, a:visited {
 	color: #0074D9;
 	text-decoration: none;
@@ -11,125 +10,96 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1 {
-	font-size: 32pt;
-	font-family: 'Montserrat', sans-serif;
-}
-h2 {
-	font-size: 16pt;
-	font-family: 'Montserrat', sans-serif;
-}
-
-html, body {
-	height: 100%;
+body {
+	box-sizing: border-box;
 	width: 100%;
-	background: #FFF;
 	margin: 0;
+	padding: 64pt 5%;
+}
+
+h1 {
+	font-size: 48pt;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
 }
 
-.avatar {
-	width: 100%;
-	height: 50%;
-	overflow: hidden;
-	background: url("img/censoredeyes.jpg");
-	background-position: center;
-	background-size: cover;
+h2 {
+	font-size: 32pt;
+	padding: 0;
 }
 
-
-
-.body {
-	box-sizing: border-box;
-	min-height: 100%;
-	width: 100%;
-	padding: 5%;
-}
-.cap {
+p {
 	font-size: 16pt;
-	margin-top: -2px;
-	line-height: 1.5em;
-	font-family: 'Montserrat', sans-serif;
-}
-.insta {
-	box-sizing: border-box;
-	flex: 1 0 auto;
-	max-width: 100%;
-	padding: 16pt;
+	padding: 0;
 }
 
-.black {
-	background: #111111;
+.flexer {
+	display: flex;
+	align-items: flex-start;
+	flex-flow: column nowrap;
+}
+
+.flexer-row {
+	display: flex;
+	align-items: flex-start;
+	flex-flow: row wrap;
+}
+
+.flexable {
+	box-sizing: border-box;
+	align-self: flex-start;
+	padding: 16pt;
+	margin: 16pt 0;
+}
+
+.flexable-row {
+	box-sizing: border-box;
+	align-self: flex-start;
+	margin: 0 32pt 32pt 0;
+}
+
+.bgWhite {
+	background: #FFF;
+	color: #111;
+}
+
+.bgWhiteContrast {
+	background: #EEE;
+}
+
+.bgBlack {
+	background: #111;
 	color: #FFF;
 }
-.blue {
+
+.bgBlue {
 	background: #0074D9;
 	color: #FFF;
 }
-.near-black {
-	background: #222222;
+
+.bgBlackContrast {
+	background: #222;
 	color: #FFF;
 }
-.yellow {
+
+.bgYellow {
 	background: #FFDC00;
-	color: #BBB;
+	color: #111;
 }
 
-#instafeed {
+.fullWidth {
 	width: 100%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	align-content: space-between;
-}
-#instafeed a img {
-	width: 100%;
-	height: auto;
 }
 
-# Google Pixel (Portrait)
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-  h1 {
-		font-size: 48pt;
-	}
-	h2 {
-		font-size: 24pt;
-	}
-
-	.insta {
-		max-width: 100%;
-	}
+.noPadding {
+	padding: 0;
 }
 
-@media screen and (min-width: 600px) {
-	h1 {
-		font-size: 48pt;
-	}
-	h2 {
-		font-size: 24pt;
-	}
-
-	.insta {
-		max-width: 50%;
-	}
+.social-button-single {
+	height: 128pt;
+	width: 128pt;
 }
 
-@media screen and (min-width: 1000px) {
-	h1 {
-		font-size: 64pt;
-	}
-	h2 {
-		font-size: 32pt;
-	}
-
-	.insta {
-		max-width: calc(100% / 3);
-	}
+.social-button-double {
+	height: 128pt;
+	width: 256pt;
 }
