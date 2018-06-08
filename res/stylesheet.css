@@ -1,20 +1,9 @@
-a, a:visited {
-	color: #0074D9;
-	text-decoration: none;
-}
-a:disabled {
-	color: #FF0000;
-}
-a:hover {
-	color: #7FDBFF;
-	text-decoration: underline;
-}
-
 body {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0;
 	padding: 64pt 5%;
+	padding-top: 32pt;
 }
 
 h1 {
@@ -57,42 +46,6 @@ p {
 	margin: 0 32pt 32pt 0;
 }
 
-.bgWhite {
-	background: #FFF;
-	color: #111;
-}
-
-.bgWhiteContrast {
-	background: #EEE;
-}
-
-.bgBlack {
-	background: #111;
-	color: #FFF;
-}
-
-.bgBlue {
-	background: #0074D9;
-	color: #FFF;
-}
-
-.bgBlackContrast {
-	background: #222;
-	color: #FFF;
-}
-
-.bgYellow {
-	background: #FFDC00;
-	color: #111;
-}
-
-.fullWidth {
-	width: 100%;
-}
-
-.noPadding {
-	padding: 0;
-}
 
 .social-button-single {
 	height: 128pt;
@@ -102,4 +55,21 @@ p {
 .social-button-double {
 	height: 128pt;
 	width: 256pt;
+}
+
+@media screen
+	and (max-width: 599px) {
+		h1 {
+			font-size: 36pt;
+		}
+		h2 {
+			font-size: 24pt;
+		}
+}
+@media screen
+	and (min-device-width: 961px)
+	and (-webkit-min-device-pixel-ratio: 1) {
+		.flexable {
+			max-width: 648pt;
+		}
 }
