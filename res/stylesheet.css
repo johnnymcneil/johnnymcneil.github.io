@@ -43,7 +43,8 @@ p {
 .flexable-row {
 	box-sizing: border-box;
 	align-self: flex-start;
-	margin: 0 32pt 32pt 0;
+	margin-bottom: 32pt;
+	padding: 16pt;
 }
 
 
@@ -55,6 +56,10 @@ p {
 .social-button-double {
 	height: 128pt;
 	width: 256pt;
+}
+
+svg:hover #svg-bg {
+	opacity: .75;
 }
 
 @media screen
@@ -71,5 +76,8 @@ p {
 	and (-webkit-min-device-pixel-ratio: 1) {
 		.flexable {
 			max-width: 648pt;
+		}
+		.flexer-row {
+			justify-content: space-evenly;
 		}
 }
