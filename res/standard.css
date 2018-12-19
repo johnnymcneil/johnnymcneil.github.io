@@ -28,6 +28,10 @@ a:hover {
 	background: #222;
 	color: #FFF;
 }
+.bgGreen {
+	background: #2ECC40;
+	color: #FFF;
+}
 .bgYellow {
 	background: #FFDC00;
 	color: #111;
