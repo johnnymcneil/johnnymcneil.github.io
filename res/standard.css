@@ -42,3 +42,18 @@ a:hover {
 .noPadding {
 	padding: 0;
 }
+
+a.a-blue {
+	background: #0074D9;
+	color: #FFF;
+}
+
+a.a-button {
+	font-size: 18pt;
+	margin: 8pt;
+	padding: 8pt 16pt;
+}
+a.a-button:hover {
+	opacity: .9;
+	text-decoration: none;
+}

@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-	font-size: 32pt;
+	font-size: 24pt;
 	padding: 0;
 }
 
@@ -38,7 +38,7 @@ p {
 	box-sizing: border-box;
 	align-self: center;
 	padding: 16pt;
-	margin: 16pt 0;
+	margin: 8pt 0;
 }
 
 .flexable-row {
@@ -47,7 +47,6 @@ p {
 	margin-bottom: 32pt;
 	padding: 16pt;
 }
-
 
 .social-button-single {
 	height: 128pt;
