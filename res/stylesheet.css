@@ -1,65 +1,86 @@
+* { padding: 0; margin: 0; }
+
 body {
+	background: #EEE;
 	box-sizing: border-box;
-	width: 100%;
+	color: #222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16pt;
+	font-weight: 400;
 	margin: 0;
-	padding: 64pt 5%;
-	padding-top: 32pt;
+	padding: 0 5%;
+}
+
+.container {
+	max-width: 540pt;
+}
+.container > article, .container > footer, .container > header {
+	box-sizing: border-box;
+	margin: 12pt 0;
+	padding: 0 12pt;
+	position: relative;
+}
+
+a, a:visited {
+	color: #0074D9;
+	text-decoration: none;
+}
+
+a:disabled {
+	color: #FF0000;
+}
+
+a:hover {
+	color: #7FDBFF;
+	text-decoration: underline;
+}
+
+a.a-button {
+	background: #95958A;
+	border: 0;
+	border-bottom: 2pt solid #222218;
+	border-radius: 4pt;
+	color: #222;
+	font-size: 16pt;
+	margin-right: 1.382em;
+	opacity: .9;
+	padding: 4pt 10pt;
+}
+
+a.a-button:active {
+	border: 0;
+	position: relative;
+	top: 2pt;
+}
+a.a-button:hover {
+	opacity: 1;
+	text-decoration: none;
 }
 
 h1 {
-	font-size: 48pt;
-	padding: 0;
+	font-size: 2.441em;
 }
 
 h2 {
-	font-size: 24pt;
-	padding: 0;
+	font-size: 1.953em;
+}
+
+article h1 {
+	font-size: 1.563em;
+}
+
+article h2 {
+	font-size: 1.25em;
+}
+
+header > div {
+	padding: 1.618em 0;
 }
 
 p {
-	font-size: 20pt;
-	padding: 0;
+	font-size: 1em;
 	line-height: 1.5em;
-}
-
-.flexer {
-	display: flex;
-	align-items: center;
-	flex-flow: column nowrap;
-}
-
-.flexer-row {
-	display: flex;
-	align-items: flex-start;
-	flex-flow: row wrap;
-}
-
-.flexable {
-	box-sizing: border-box;
-	align-self: center;
-	padding: 16pt;
-	margin: 8pt 0;
-}
-
-.flexable-row {
-	box-sizing: border-box;
-	align-self: flex-start;
-	margin-bottom: 32pt;
-	padding: 16pt;
-}
-
-.social-button-single {
-	height: 128pt;
-	width: 128pt;
-}
-
-.social-button-double {
-	height: 128pt;
-	width: 256pt;
-}
-
-svg:hover #svg-bg {
-	opacity: .75;
+	padding: 0;
 }
 
 @media screen
@@ -69,15 +90,5 @@ svg:hover #svg-bg {
 		}
 		h2 {
 			font-size: 24pt;
-		}
-}
-@media screen
-	and (min-device-width: 961px)
-	and (-webkit-min-device-pixel-ratio: 1) {
-		.flexable {
-			max-width: 648pt;
-		}
-		.flexer-row {
-			justify-content: space-evenly;
 		}
 }
