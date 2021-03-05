@@ -60,7 +60,9 @@ header h2 {
 p {
 	font-size: 1em;
 	line-height: 1.5em;
-	padding: 0;
+	padding-bottom: 12pt;
+	text-align: justify;
+	text-indent: 50pt;
 }
 #page-container {
 	display: block;
@@ -72,24 +74,30 @@ p {
 #page-container div {
 	margin-top: 24pt;
 }
-
-.max-width {
+.img-max-width {
 	margin: 0 auto;
 	max-width: 1000pt;
 	padding: 0 12pt;
 }
-
+.max-width {
+	margin: 0 auto;
+	max-width: 600pt;
+	padding: 0 12pt;
+}
 .ascii-art {
 	color: #0F0;
 	font-family: monospace;
 	font-size: 100%;
+	padding: 24pt 0;
 	text-align: center;
 }
 .ascii-art p {
 	font-size: 1.5vmin;
 	line-height: 1em;
+	padding: 0;
+	text-align: center;
+	text-indent: 0;
 }
-
 /* Wizardy */
 @media screen
 	and (max-width: 599px) {
