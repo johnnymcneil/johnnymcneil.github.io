@@ -45,7 +45,8 @@ h1 {
 	text-align: center;
 }
 h2 {
-	font-size: .875em;
+	font-size: 1em;
+	font-weight: 700;
 	text-align: center;
 }
 header {
@@ -60,7 +61,7 @@ header h2 {
 p {
 	font-size: 1em;
 	line-height: 1.5em;
-	padding-bottom: 12pt;
+	padding-top: 12pt;
 	text-align: justify;
 	text-indent: 50pt;
 }
