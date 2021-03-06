@@ -32,13 +32,11 @@ html {
 }
 footer {
 	bottom: 0;
-	height: 108pt;
+	padding: 42pt 0;
 	position: absolute;
+	text-align: center;
 	vertical-align: center;
 	width: 100%;
-}
-footer h2 {
-	line-height: 108pt;
 }
 h1 {
 	font-size: 1.75em;
@@ -48,6 +46,10 @@ h2 {
 	font-size: 1em;
 	font-weight: 700;
 	text-align: center;
+}
+footer h2 {
+	font-size: .875em;
+	line-height: 1em;
 }
 header {
 	padding-top: 24pt;
@@ -65,11 +67,17 @@ p {
 	text-align: justify;
 	text-indent: 50pt;
 }
+footer p {
+	font-size: .875em;
+	line-height: 1em;
+	text-align: center;
+	text-indent: 0;
+}
 #page-container {
 	display: block;
 	min-height: 100vh;
 	overflow: hidden;
-	padding-bottom: 108pt;
+	padding-bottom: 124pt;
 	position: relative;
 }
 #page-container div {
